@@ -1,0 +1,53 @@
+
+.frieren {
+    padding: 80px 0;
+
+
+    &--primary{
+        background-image: linear-gradient(aqua, rgb(4, 107, 107));
+    }
+
+    &--secondary{
+        background-image: linear-gradient(rgb(4, 107, 107), rgba(216, 57, 57, 0.568));
+    }
+    
+    &--terceiro{
+        background-image: linear-gradient(rgba(216, 57, 57, 0.568), rgb(221, 215, 133));
+    }
+
+    &--image-left{
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+    
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__image {
+        max-width: 360px;
+
+        &--secondary {
+            max-width: 760px;
+            max-height: 560px;
+            margin-top: 150px;
+        }
+    }
+
+    &__details {
+
+        &__title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+}
